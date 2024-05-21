@@ -1,5 +1,41 @@
-<h1>this is an test app for hosting</h1>
-<h5>this is the seconfd initial hosting</h5>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallpaper</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("../assets/wallpaper_logo.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 97vh;
+      }
+      .content-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.5
+        ); /* Semi-transparent white background */
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-box">
+      <h1>Your Content Goes Here</h1>
+      <p>This is a div box placed on top of the background image.</p>
+    </div>
+  </body>
+</html>
 
-<h4>ravi teja</h4>
 <router-outlet></router-outlet>
